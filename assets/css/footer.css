@@ -1,0 +1,178 @@
+footer {
+  background: #e0e0e0;
+}
+
+.footer-form {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.footer-form_item {
+  padding: 0 15px;
+}
+
+.footer-form_item form {
+  border-radius: 5px;
+  background: var(--color-primary);
+  padding: 0 15px 5px 15px;
+}
+
+.form-title {
+  padding: 21px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-form_item form input {
+  width: 100%;
+}
+
+.form-input2 {
+  display: flex;
+}
+
+.form-input {
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.footer-form_item form input {
+  padding: 10px 5px;
+  border: none;
+  border-radius: 3px;
+}
+
+.footer-form_item form textarea {
+  width: 100%;
+  min-height: 100px;
+  border: none;
+  border-radius: 3px;
+}
+
+/* section footer text */
+
+.footer-text {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer-text-col {
+  border-right: 1px solid #999;
+}
+
+.footer-text-col:last-child {
+  border-right: none;
+}
+
+.footer-text_item {
+  padding: 0 15px;
+}
+
+.footer-form_item a {
+  display: block;
+}
+
+.footer-form_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer-text_ggmap iframe {
+  width: 100%;
+  height: 200px;
+}
+
+.footer-text_ggmap {
+  margin-top: 10px;
+}
+
+.footer_about-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_about-us a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-form-container {
+  margin: -15px 0;
+}
+
+.footer-text_container {
+  margin: -15px 0;
+}
+
+.input-submit {
+  color: #fff;
+  background: #5b5b5d;
+  display: block;
+  text-align: justify;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 8px 30px 8px 30px !important;
+  transition: all 500ms ease;
+  cursor: pointer;
+  width: auto !important;
+}
+
+.footer-text-col h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+
+.footer-text_logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-text_office {
+}
+
+.footer-text_contact {
+}
+
+.footer-text_office svg {
+  margin: 0 5px -3px 0;
+}
+
+.footer-text_item p {
+  margin-bottom: 10px;
+}
+
+.footer-text_contact svg {
+  margin-bottom: -3px;
+  margin-right: 5px;
+}
+
+.footer-text_contact a {
+  text-decoration: none;
+  color: #333;
+}
+
+.qr-code {
+  text-align: center;
+}
+
+.qr-code img {
+  width: 50%;
+}
+
+#footer-copyright {
+  text-align: center;
+  padding: 50px 0;
+}
+
+/* mobile version */
+@media only screen and (max-width: 767px) {
+  #footer-desktop {
+    display: none;
+  }
+
+  .footer-form_item {
+    margin-bottom: 15px;
+  }
+}

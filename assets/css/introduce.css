@@ -1,0 +1,36 @@
+.introduce {
+  padding: 0 30px;
+}
+
+.introduce-heading {
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  padding: 50px 0;
+}
+
+.introduce-contact {
+  margin: 30px 0 50px;
+}
+
+.introduce-contact h2 {
+  margin: 15px 0;
+}
+
+.introduce-contact ul {
+  padding-left: 30px;
+}
+
+.introduce-content img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* mobile version */
+@media only screen and (max-width: 767px) {
+  .introduce-content img {
+    width: 100%;
+  }
+}

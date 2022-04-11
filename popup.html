@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spool Spa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/popup.css">
+</head>
+<body>
+    <div id="popup_tkkt" class="popup-container">
+        <div class="popup-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15px">
+                <path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" fill='#5e5e5e'/>
+            </svg>
+        </div>
+        <div class="popup-title">
+            <h4 class="type">Miễn Phí Mẫu Thiết Kế & Khái Toán Thi Công</h4>
+        </div>
+        <div class="popup-form-container">
+            <form action="" class="popup-form">
+                <div class="popup-form_input">
+                    <input type="text" placeholder="Nhập Họ & Tên*" required>
+                    <input type="phone" placeholder="Điện thoại*" required>
+                </div>
+                <button>Gửi yêu cầu</button>
+            </form>
+        </div>
+    </div>
+    <section id="contact-fix-pc" class="contact-pc-container">
+        <ul class="contact-pc_list">
+            <li class="contact-pc_item">
+                <div class="contact-pc_item-type">Bản đồ đường đi</div>
+                <button class="contact-pc_item-btn">
+                    <img src="./assets/img/icon_map.png.webp" alt="icon_map">
+                </button>
+            </li>
+            <li class="contact-pc_item">
+                <div class="contact-pc_item-type">Liên hệ nhận mẫu miễn phí</div>
+                <button class="contact-pc_item-btn">
+                    <img src="./assets/img/icon_form.png.webp" alt="icon_map">
+                </button>
+            </li>
+            <li class="contact-pc_item">
+                <div class="contact-pc_item-type">Chat với chúng tôi qua Facebook</div>
+                <button class="contact-pc_item-btn">
+                    <img src="./assets/img/icon_messenger.png.webp" alt="icon_map">
+                </button>
+            </li>
+            <li class="contact-pc_item">
+                <div class="contact-pc_item-type">Chat với chúng tôi qua zalo</div>
+                <button class="contact-pc_item-btn">
+                    <img src="./assets/img/icon_zalo.png.webp" alt="icon_map">
+                </button>
+            </li>
+            <li class="contact-pc_item">
+                <div class="contact-pc_item-type">
+                    Hỗ trợ trực tuyến: 0939.984.958
+                    <br/>
+                    Hotline Kỹ thuật: 0939.984.958
+                </div>
+                <button class="contact-pc_item-btn">
+                    <img src="./assets/img/icon_call.png.webp" alt="icon_map">
+                </button>
+            </li>
+
+            <li class="contact-pc_item">
+                <button onclick="topFunction()" id="btn-top" title="Go to top">
+                    <img src="./assets/img/btntop.PNG" alt="">
+                </button>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact-fix-mobile">
+        <div class="contact-mobile_list">
+            <div class="contact-mobile_item">
+                <a href="">
+                    <img src="./assets/img/icon-dien-thoai-betaviet.webp" alt="">
+                </a>
+                <p>Gọi ngay</p>
+            </div>
+            <div class="contact-mobile_item">
+                <a href="">
+                    <img src="./assets/img/icon-zalo-chuan.png.webp" alt="">
+                </a>
+                <p>Zalo</p>
+            </div>
+            <div class="contact-mobile_item">
+                <a href="">
+                    <img src="./assets/img/icon-fb.png.webp" alt="">
+                </a>
+                <p>Messenger</p>
+            </div>
+            <div class="contact-mobile_item">
+                <a href="">
+                    <img src="./assets/img/icon-from-lien-he-betaviet.png.webp" alt="">
+                </a>
+                <p>Liên hệ</p>
+            </div>
+            <div class="contact-mobile_item">
+                <a href="">
+                    <img src="./assets/img/icon-ban-do-1.png.webp" alt="">
+                </a>
+                <p>Bản đồ</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("btn-top");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            mybutton.style.visibility = "visible";
+          } else {
+            mybutton.style.visibility = "hidden";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+.archive_list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 45px 45px 45px;
+}
+
+.archive_list-item {
+  width: calc(100% / 3);
+  padding: 0 30px 10px;
+  border-right: 1px solid #ccc;
+  margin-bottom: 45px;
+}
+
+.archive_list-item:nth-child(3n) {
+  border: none;
+}
+
+.archive_list-item a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+.archive_item-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.archive_item-thumb img {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  transition: all 500ms ease;
+}
+
+.archive_item-thumb:hover img {
+  transform: scale(1.05);
+}
+
+.archive_item-cont {
+  padding: 0 30px;
+}
+
+.archive_item-date-cat {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.archive_item-date-cat div {
+  margin-top: 15px;
+}
+
+.archive_item-date {
+  margin-right: 15px;
+  cursor: auto;
+}
+
+.archive_item-cat {
+  padding-left: 15px;
+  border-left: 1px solid #999;
+  transition: all 0.3s linear;
+}
+
+.archive_item-title a {
+  font-size: 19px;
+  line-height: 25px;
+  margin: 19px 0;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  font-family: var(--font-secondary);
+}
+
+.archive_item-cat:hover a,
+.archive_item-title:hover a,
+.archive_item-cont .read-more:hover a {
+  color: var(--color-primary);
+}
+
+.archive_item-cont .read-more {
+  margin-top: 15px;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.archive_item-cont .read-more a {
+  margin-left: 25px;
+  transition: all 0.3s linear;
+}
+
+/* tablet version */
+@media only screen and (max-width: 1161px) {
+  .archive_list-item:nth-child(3n) {
+    border-right: 1px solid #ccc;
+  }
+
+  .archive_list-item:nth-child(2n) {
+    border-right: none;
+  }
+
+  .archive_list-item {
+    width: calc(100% / 2);
+  }
+}
+
+/* mobile version */
+@media only screen and (max-width: 767px) {
+  .archive_list-item {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 40px auto;
+    padding: 0 0 20px 0;
+    box-shadow: 5px 5px 5px 0 #969696;
+  }
+
+  .archive_list {
+    padding: 10px 30px 30px;
+  }
+}
