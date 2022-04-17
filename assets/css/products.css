@@ -80,7 +80,7 @@
   display: none;
 }
 
-.products-navbar-menu>li:hover a,
+.products-navbar-menu>li:hover>a,
 .sub-menu li:hover a {
   color: #1852b6;
 }
@@ -131,7 +131,7 @@
   border: 1px solid var(--color-border);
 }
 
-.products-box_content a span:hover {
+.products-box_content a:hover span{
   color: #1852b6;
 }
 

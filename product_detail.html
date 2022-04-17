@@ -140,6 +140,25 @@
             padding-left: 30px;
         }
 
+        .content__tab {
+            display: none;
+        }
+
+        .content__tab.active {
+            display: block;
+        }
+
+        .tab-item.active{
+            background: #1c4286;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .tab-item {
+            padding: 10px 12px;
+            cursor: pointer;
+        }
+
     </style>
 </head>
 <body>
@@ -174,16 +193,16 @@
                         </div>
     
                         <div class="tabs-wrapper">
-                            <ul class="tabs wc-tabs">
-                                <li class="description_tab"><a href="">Mô tả</a></li>
-                                <li class="reviews_tab"><a href=""> Đánh giá (0)</a></li>
+                            <ul class="tabs wc-tabs tab-list">
+                                <li class="description_tab tab-item" data-id="disc">Mô tả</li>
+                                <li class="reviews_tab tab-item active" data-id="review">Đánh giá (0)</li>
                             </ul>
                         </div>
                         <div class="tabs-panel">
-                            <div class="tabs-panel_desc">
-    
+                            <div class="tabs-panel_desc content__tab" id="disc">
+                                <p>discription here</p>
                             </div>
-                            <div class="tabs-panel_review">
+                            <div class="tabs-panel_review content__tab active" id="review">
                                 <div id="reviews">
                                     <div id="comment">
                                         <h2>Đánh giá</h2>
@@ -411,5 +430,29 @@
             </div>
         </div>
     </div>
+
+    <script>
+         const tabList = document.querySelector('.tab-list');
+        const tabs = document.querySelectorAll('.tab-item');
+        const articles = document.querySelectorAll('.content__tab');
+        
+        tabList.addEventListener('click', function(e) {
+            const id = e.target.dataset.id;
+
+            if(e.target.dataset) {
+                tabs.forEach(function (tab) {
+                        tab.classList.remove('active');
+                        e.target.classList.add('active');
+                    });
+                    
+                articles.forEach(function (article) {
+                    article.classList.remove('active');
+                });
+
+                const element = document.getElementById(id);
+                element.classList.add('active');
+            }
+        })
+    </script>
 </body>
 </html>

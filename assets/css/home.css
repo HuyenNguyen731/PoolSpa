@@ -15,7 +15,7 @@
         }
         
         .weare-wrap {
-            margin-top: 50px;
+            margin: 50px -15px 0;
         }
         
         .weare-wrap_right,
@@ -34,6 +34,7 @@
         .weare-wrap_right h3 {
             font-size: 16px;
             margin: 16px 0;
+            font-weight: 700;
         }
         
         .home-counter {
@@ -45,6 +46,7 @@
         .home-counter span {
           margin-right: 20px;
           font-size: 40px;
+          font-weight: 600;
           color: var(--color-primary);
         }
         
@@ -110,6 +112,12 @@
         
         .project-posts {
           margin: 50px -10px 0 -10px;
+        }
+
+        .m-8 .project-posts_content {
+          height: 100%;
+          padding-right: 26px;
+
         }
         
         .project-posts_content img {
@@ -192,7 +200,8 @@
           text-decoration: none;
           background: var(--color-primary);
           color: #fff;
-          padding: 5px 10px;
+          text-transform: uppercase;
+          padding: 6px 26px;
         }
         
         .designer-btn {
@@ -238,8 +247,9 @@
           text-decoration: none;
           background: var(--color-primary);
           color: #fff;
-          padding: 5px 10px;
+          padding: 5px 26px;
           margin-top: 50px;
+          text-transform: uppercase;
         }
         
         .products-overlay {
@@ -255,7 +265,7 @@
         .products-overlay_box {
           font-size: 25px;
           color: #af0505;
-          border: 1px solid #fff;
+          border: 1px solid rgb(7, 7, 119);
           position: absolute;
           top: 50%;
           left: 50%;
@@ -326,6 +336,7 @@
         
         .event-item_img {
           position: relative;
+          overflow: hidden;
         }
         
         .event-item_img img {
@@ -363,21 +374,77 @@
           line-height: 12px;
           font-weight: 300;
           padding: 10px 10px 10px 10px;
+          cursor: auto;
         }
         
         .event-item_disc {
           padding: 0 10px 10px 10px;
         }
+
+        .event-item:hover img {
+          transform: scale(1.05);
+          transition: all 0.3s linear;
+         
+        }
+
+        .event-item:hover {
+          text-decoration: none;
+        }
+
+        .event-item_title:hover {
+          color: var(--color-primary);
+          transition: all 0.3s linear;
+        }
         
+
+        /* Báo chí nói gì */
+        .item-link {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+
+        .about-content-title{
+          font-size: 13px;
+          font-weight: 600;
+          text-transform: uppercase;
+          text-align: center;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+
         /* mobile version */
         @media only screen and (max-width: 1161px) {
-        .WeDo-list_item-disc {
+          .WeDo-list_item-disc {
             display: none;
-        }
+          }
+          .weare-wrap {
+            padding: 20px;
+            margin: 50px 0 0;
+          }
+
+          .WeDo-wrap {
+            padding: 0 20px;
+          }
         
         .product-wraper {
             padding: 15px;
         }
+
+        .project-wrap_text {
+          display: none;
+        }
+        .m-8 .project-posts_content {
+          height: auto;
+        }
+
+        .project-posts {
+          padding: 0 40px;
+        }
+
+        .event {
+          margin: 30px 0 45px;
         }
         
         /* mobile version */
@@ -427,3 +494,4 @@
         }
         
         }
+      }
