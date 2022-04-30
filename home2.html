@@ -15,6 +15,33 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/home.css">
 
+    <style>
+        .owl-dots {
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+        }
+
+        .owl-nav {
+            position: absolute;
+            top: 50%;
+            width: 97%;
+            display: flex;
+            transform: translateY(-50%);
+            color: var(--color-primary);
+            justify-content: space-between;
+        }
+
+        .owl-theme .owl-nav [class*='owl-']:hover {
+            background: transparent;
+            color: var(--color-primary);
+        }
+
+        .owl-nav button {
+            font-size: 100px !important;
+        }
+    </style>
+
 </head>
 <body>
     <div id="home">
@@ -477,7 +504,7 @@
       $('.owl-carousel.owl-carouse2').owlCarousel({
         loop:true,
         margin:10,
-        // nav:true,
+        nav:true,
         autoplay:true,
         autoplayTimeout:1000,
         autoplayHoverPause:true,
