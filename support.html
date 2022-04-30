@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <style>
+
+        body {
+            background: #4f4f4f;
+            display: grid;
+            place-content: center;
+            height: 100vh;
+        }
+
+        .support {
+            padding: 15px;
+            border-radius: 10px;
+            max-width: 480px;
+            background: var(--color-white);
+        }
+
+        .support-wraper {
+            font-size: 16px;
+            position: relative;
+        }
+
+        .support-btn_cont {
+            position: absolute;
+            right: -5px;
+            top: -5px;
+            z-index: 1;
+            padding: 8px 12px 2px;
+            background: #dcdcdc;
+            border-radius: 50%;
+        }
+
+        .support-title {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .form-input {
+            display: flex;
+        }
+
+        .support-input {
+            flex: 1;
+        }
+
+        input {
+            margin: 8px 0;
+            font-size: 14px;
+            padding: 14px 8px;
+            border-radius: 5px;
+            border: 0.5px solid #c5c5c5;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        .support-submit {
+            background: #bc7026;
+            color: #fff;
+        }
+
+        .phone-1 {
+            font-size: 22px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .phone-1 img {
+            width: 30px;
+            margin-right: 5px;
+        }
+
+        .support-wraper p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="support">
+        <div class="support-wraper">
+            <div class="support-btn_cont">
+                <svg width="10px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                    <path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" fill="#bc7026"/>
+                </svg>
+            </div>
+            <div class="support-title">
+                Để lại số điện thoại để 
+                <br>
+                chuyên viên tư vấn hỗ trợ bạn nhanh nhất
+            </div>
+            <form action="">
+                <div class="form-input">
+                    <input class="support-input" type="phone" required placeholder="Nhập số điện thoại của bạn">
+                    <input class="support-submit" type="submit" value="Yêu cầu gọi lại" class="form-submit">
+                </div>
+            </form>
+            <p> Gọi cho chúng tôi để nhận được những ưu đãi mới nhất.</p>
+            <p class="phone-1">
+                <img src="./assets/img/phone-call.webp" alt="">
+                Hỗ trợ trực tuyến : 0982 853 922<a href="tel: 0982 853 922"></a>
+            </p>
+            <p class="phone-1">
+                <img src="./assets/img/phone-call.webp" alt="">
+                Hỗ trợ kỹ thuật : 0982 853 922<a href="tel: 0982 853 922"></a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
