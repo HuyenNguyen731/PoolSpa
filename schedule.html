@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <style>
+        body {
+            background: #4f4f4f;
+            display: grid;
+            place-content: center;
+            height: 100vh;
+        }
+
+        .schedule {
+            background: #fff;
+            float: left;
+            padding: 15px 15px 15px 15px;
+            border-radius: 10px 10px 10px 10px;
+            display: block;
+            justify-content: center;
+            max-width: 480px;
+        }
+
+        .schedule-wraper span {
+            display: block;
+        }
+
+        .schedule-wraper {
+            background: #bc7026;
+            padding: 15px;
+            position: relative;
+        }
+
+        .btn_cont {
+            position: absolute;
+            right: -5px;
+            z-index: 1;
+            padding: 8px 12px 2px;
+            background: #bc7026;
+            top: -10px;
+            border-radius: 50%;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            border: 0 hidden #fff;
+            border-radius: 3px 3px 3px 3px;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+        }
+
+        .input-lable {
+            display: flex;
+            gap: 8px;
+            margin: 8px 0;
+        }
+
+        .schedule-title {
+            color: #fff;
+            text-align: center;
+            font-family: var(--font-secondary);
+        }
+
+        .form-submit {
+            color: #fff;
+            background: #5b5b5d;
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+            border: 0 hidden #5b5b5d;
+            border-radius: 3px 3px 3px 3px;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 8px 30px 8px 30px;
+            width: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="schedule">
+        <div class="schedule-wraper">
+            <div class="btn_cont">
+                <svg width="10px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                    <path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" fill="#fff"/>
+                </svg>
+            </div>
+            <h4 class="schedule-title">Đặt lịch tư vấn & Nhận báo giá</h4>
+            <form action="">
+                <p>
+                    <span class="text-1">
+                        <input type="text" name="text-1" size="40" placeholder="Họ và tên *" required>
+                    </span>
+                    <p class="input-lable">
+                        <span class="email">
+                            <input type="email" name="email" size="40" placeholder="Nhập email hoặc zalo">
+                        </span>
+                        <span class="phone">
+                            <input type="phone" name="phone" size="40" placeholder="Nhập điện thoại*" required>
+                        </span>
+                    </p>
+                    <span> 
+                        <textarea name="" id="" cols="40" rows="5" placeholder="Mô tả chi tiết các yêu cầu của bạn..."></textarea>
+                    </span>
+                </p>
+                <input type="submit" value="Nhận tư vấn" class="form-submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
