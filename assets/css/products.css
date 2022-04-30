@@ -78,6 +78,7 @@
   padding: 10px 15px;
   border: 1px solid #333;
   display: none;
+  z-index: 2;
 }
 
 .products-navbar-menu>li:hover>a,
