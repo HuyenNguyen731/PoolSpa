@@ -35,6 +35,7 @@
             padding: 8px 12px 2px;
             background: #dcdcdc;
             border-radius: 50%;
+            cursor: pointer;
         }
 
         .support-title {
@@ -110,5 +111,14 @@
             </p>
         </div>
     </div>
+
+    <script>
+        // btn close 
+        const btnClose = document.querySelector('.support-btn_cont');
+        const formSupport = document.querySelector('.support');
+        btnClose.addEventListener('click', () => {
+            formSupport.style.display = 'none';
+        })
+    </script>
 </body>
 </html>

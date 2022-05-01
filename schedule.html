@@ -39,6 +39,7 @@
             background: #bc7026;
             top: -10px;
             border-radius: 50%;
+            cursor: pointer;
         }
 
         input, textarea {
@@ -112,5 +113,14 @@
             </form>
         </div>
     </div>
+
+    <script>
+        // btn close 
+        const btnClose = document.querySelector('.btn_cont');
+        const formSchedule = document.querySelector('.schedule');
+        btnClose.addEventListener('click', () => {
+            formSchedule.style.display = 'none';
+        })
+    </script>
 </body>
 </html>

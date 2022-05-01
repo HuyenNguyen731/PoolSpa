@@ -131,6 +131,14 @@
           document.body.scrollTop = 0;
           document.documentElement.scrollTop = 0;
         }
+
+
+        // btn close 
+        const btnClose = document.querySelector('.popup-close');
+        const formPopup = document.querySelector('#popup_tkkt');
+        btnClose.addEventListener('click', () => {
+            formPopup.style.display = 'none';
+        })
     </script>
 </body>
 </html>
