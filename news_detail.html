@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <style>
+
+        .news_detail-left {
+            background: #999;
+            margin-right: 30px;
+        }
+
+        .dc_single_breadcrumbs {
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+
+        .dc_single_breadcrumbs a {
+            margin-right: 5px;
+            display: inline-block;
+        }
+
+        .dc_single_date {
+            margin-top: 20px;
+        }
+
+
+
+        /* detail right */
+
+        .news_detail-post img{
+            width: 100%;
+        }
+
+        .news_detail-form {
+            background: #25aae1;
+            padding: 15px;
+        }
+
+        .news_detail-form-title {
+            border-bottom: 1px dashed #fff;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+            font-family: var(--font-secondary);
+        }
+
+        .form_input-label {
+            display: flex;
+        }
+
+        .form_input-label label {
+            width: 100%;
+            color: #fff;
+            font-size: 14px;
+            line-height: 12px;
+            margin-bottom: 5px;
+        }
+
+        .form_input-label .form-control {
+            width: 100%;
+            height: 26px;
+            border: 0 hidden #fff;
+            border-radius: 3px;
+            padding-right: 10px;
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        .news_detail-form form .form-submit {
+            color: #25aae1;
+            background: #fff;
+            display: block;
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase;
+            border: 0 hidden #fff;
+            border-radius: 3px 3px 3px 3px;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 8px 30px 8px 30px;
+            cursor: pointer;
+        }
+
+        .news_detail-post-title {
+            margin: 15px 0;
+            display: block;
+            font-family: var(--font-secondary);
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .img-overlay {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transition: all 0.6s ease;
+          opacity: 0;
+        }
+        
+        .img-overlay_box {
+          font-size: 25px;
+          color: #af0505;
+          border: 3px solid #fff;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          transition: all 0.3s ease;
+          width: 50px;
+          height: 50px;
+          text-align: center;
+          line-height: 50px;
+          border-radius: 6px;
+        }
+
+        
+        .img-overlay_box svg {
+           height: 100%;
+        }
+
+        .news_post-item {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .news_post-item:hover .img-overlay {
+          background: rgba(58, 52, 42, 0.7);
+          opacity: 1;
+          border-radius: 1px;
+        }
+
+        .news_detail-form input:focus {
+            outline: none;
+        }
+
+        /* tablet version */
+        @media only screen and (max-width: 1161px) {
+            .news_detail {
+                padding: 0 20px;
+            }
+
+            .news_detail-left {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .form_input-label label {
+                max-width: 160px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="news_detail">
+        <div class="kc-container">
+            <div class="row">
+                <div class="l-9 m-12 s-12">
+                    <div class="news_detail-left">
+                        <div class="dc_single_breadcrumbs">
+                            <a href="">Trang chủ | </a>
+                            
+                            <a href="">Kiến thức xây dựng bể bơi | </a>
+                             Quy trình chống thấm bể bơi hiệu quả
+                        </div>
+                        <div class="dc_single_date">13/04/2022</div>
+                        NỘI DUNG
+                    </div>
+                </div>
+                <div class="l-3 m-12 s-12">
+                    <div class="news_detail-right">
+                        <div class="news_detail-form">
+                            <h3 class="news_detail-form-title">Nhận mẫu bể bơi miễn phí</h3>
+                            <form action="">
+                                <section class="form_input-label">
+                                    <label for="type">Loại hình bể bơi</label>
+                                    <select class="form-control" name="type" id="type">
+                                        <option value="Bể bơi gia đình">Bể bơi gia đình</option>
+                                        <option value="Bể bơi resort, homestay">Bể bơi resort, homestay</option>
+                                        <option value="Bể bơi khách sạn">Bể bơi khách sạn</option>
+                                        <option value="Bể bơi kinh doanh">Bể bơi kinh doanh</option>
+                                    </select>
+                                </section>
+                                <section class="form_input-label">
+                                    <label>Diện tích bể bơi</label>
+                                    <input  class="form-control" type="text" placeholder="Diện tích">
+                                </section>
+                                <section class="form_input-label">
+                                    <label>Chiều dài bể</label>
+                                    <input  class="form-control" type="text" placeholder="Chiều dài">
+                                </section>
+                                 <section class="form_input-label">
+                                    <label>Chiều ngang bể</label>
+                                    <input  class="form-control" type="text" placeholder="Chiều ngang">
+                                </section>
+                                <section class="form_input-label">
+                                    <label for="location">Vị trí bể bơi</label>
+                                    <select class="form-control" name="location" id="location">
+                                        <option value="Bể bơi trong nhà">Bể bơi trong nhà</option>
+                                        <option value="Bể bơi ngoài trời">Bể bơi ngoài trời</option>
+                                        <option value="Bể bơi trên tầng thượng">Bể bơi trên tầng thượng</option>
+                                        <option value="Bể bơi tầng hầm">Bể bơi tầng hầm</option>
+                                        <option value="Bể bơi khác">Bể bơi khác</option>
+                                    </select>
+                                </section>
+                                <section class="form_input-label">
+                                    <label for="style">Vị trí bể bơi</label>
+                                    <select class="form-control" name="style" id="style">
+                                        <option value="Bể bơi tràn viền">Bể bơi tràn viền</option>
+                                        <option value="Bể bơi không tràn viền">Bể bơi không tràn viền</option>
+                                        <option value="Bể bơi trên vô cực">Bể bơi trên vô cực</option>
+                                        <option value="Bể bơi khác">Bể bơi khác</option>
+                                    </select>
+                                </section>
+                                <section class="form_input-label">
+                                    <label>Email hoặc zalo</label>
+                                    <input class="form-control" type="text" placeholder="Email hoặc zalo">
+                                </section>
+                                <section class="form_input-label">
+                                    <label>Điện thoại*</label>
+                                    <input class="form-control" type="phone" placeholder="Điện thoại">
+                                </section>
+                                <section class="form_input-label">
+                                    <label>Tên người gửi*</label>
+                                    <input class="form-control" type="text" placeholder="Tên người gửi">
+                                </section>
+                                <input type="submit" value="Đăng ký" class="form-submit">
+                            </form>
+                        </div>
+                        <div class="news_detail-post">
+                            <em class="news_detail-post-title">Dự án đã thi công</em>
+                            <div class="news_post-item">
+                                <a href="">
+                                    <img src="./assets/img/footer2.png" alt="">
+                                    <div class="img-overlay">
+                                        <div class="img-overlay_box">
+                                            <svg width="35px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z" fill="#fff"/></svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="news_post-item">
+                                <a href="">
+                                    <img src="./assets/img/footer2.png" alt="">
+                                    <div class="img-overlay">
+                                        <div class="img-overlay_box">
+                                            <svg width="35px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z" fill="#fff"/></svg>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
