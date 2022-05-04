@@ -9,7 +9,7 @@
     <style>
 
         .news_detail-left {
-            background: #999;
+            /* background: #999; */
             margin-right: 30px;
         }
 
@@ -143,6 +143,74 @@
             outline: none;
         }
 
+        .news_other-item {
+            padding: 0 30px;
+            margin-top: 30px;
+            background: #fff;
+            border-right: 1px solid #ccc;
+        }
+
+        .news_detail-other .l-4:nth-child(3n) .news_other-item{
+            border-right: none;
+        }
+
+        .news_other-thumb {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .news_other-thumb:hover img {
+            transform: scale(1.05);
+            transition: all 500ms ease;
+        }
+
+        .news_other-thumb-cat {
+            background: var( --color-primary);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 9;
+            color: #FFF;
+            padding: 5px 10px;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        .news_other-thumb img {
+            width: 100%;
+            display: block;
+        } 
+
+        .news_other-title {
+            font-size: 19px;
+            line-height: 25px;
+            background: #FFF;
+            font-weight: 600;
+            color: #4d4d4d;
+            margin: 19px 0;
+            transition: all 500ms ease;
+            font-family: var(--font-secondary);
+        }
+
+        .news_other-title:hover,
+        .news_other-readmore:hover {
+            color: var( --color-primary);
+        }
+
+        .news_other-desc {
+            transition: all 500ms ease;
+            padding-bottom: 10px;
+        }
+
+        .news_other-readmore {
+            margin-top: 15px;
+            text-transform: uppercase;
+        }
+
+        .news_other-desc:hover {
+            cursor: auto;
+        }
+
         /* tablet version */
         @media only screen and (max-width: 1161px) {
             .news_detail {
@@ -156,6 +224,11 @@
 
             .form_input-label label {
                 max-width: 160px;
+            }
+
+            .news_other-item {
+                border: none;
+                padding: 0;
             }
         }
     </style>
@@ -173,7 +246,110 @@
                              Quy trình chống thấm bể bơi hiệu quả
                         </div>
                         <div class="dc_single_date">13/04/2022</div>
-                        NỘI DUNG
+                        <div>
+                            NỘI DUNG
+                        </div>
+                        <div class="news_detail-other">
+                            <h3>Các tin khác</h3>
+                            <div class="row">
+                                <div class="l-4 m-12 s-12">
+                                    <div class="news_other-item">
+                                        <a href="">
+                                            <div class="news_other-thumb">
+                                                <img src="./assets/img/xay-dung-be-boi.png" alt="">
+                                                <div class="news_other-thumb-cat">
+                                                    Kiến thức xây dựng bể bơi
+                                                </div>
+                                            </div>
+                                            <div class="news_other-title">Kích thước tiêu chuẩn của hồ bơi gia đình là bao nhiêu?</div>
+                                            <div class="news_other-date"> Ngày 22 Tháng 02 Năm 2022</div>
+                                            <div class="news_other-desc"> Hiện nay, tại rất nhiều vùng miền vẫn sử dụng nước giếng khoan. Chính vì vậy, câu hỏi “có nên sử dụng nước giếng khoan...</div>
+                                            <div class="news_other-readmore">Chi tiết</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="l-4 m-12 s-12">
+                                    <div class="news_other-item">
+                                        <a href="">
+                                            <div class="news_other-thumb">
+                                                <img src="./assets/img/xay-dung-be-boi.png" alt="">
+                                                <div class="news_other-thumb-cat">
+                                                    Kiến thức xây dựng bể bơi
+                                                </div>
+                                            </div>
+                                            <div class="news_other-title">Kích thước tiêu chuẩn của hồ bơi gia đình là bao nhiêu?</div>
+                                            <div class="news_other-date"> Ngày 22 Tháng 02 Năm 2022</div>
+                                            <div class="news_other-desc"> Hiện nay, tại rất nhiều vùng miền vẫn sử dụng nước giếng khoan. Chính vì vậy, câu hỏi “có nên sử dụng nước giếng khoan...</div>
+                                            <div class="news_other-readmore">Chi tiết</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="l-4 m-12 s-12">
+                                    <div class="news_other-item">
+                                        <a href="">
+                                            <div class="news_other-thumb">
+                                                <img src="./assets/img/xay-dung-be-boi.png" alt="">
+                                                <div class="news_other-thumb-cat">
+                                                    Kiến thức xây dựng bể bơi
+                                                </div>
+                                            </div>
+                                            <div class="news_other-title">Kích thước tiêu chuẩn của hồ bơi gia đình là bao nhiêu?</div>
+                                            <div class="news_other-date"> Ngày 22 Tháng 02 Năm 2022</div>
+                                            <div class="news_other-desc"> Hiện nay, tại rất nhiều vùng miền vẫn sử dụng nước giếng khoan. Chính vì vậy, câu hỏi “có nên sử dụng nước giếng khoan...</div>
+                                            <div class="news_other-readmore">Chi tiết</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="l-4 m-12 s-12">
+                                    <div class="news_other-item">
+                                        <a href="">
+                                            <div class="news_other-thumb">
+                                                <img src="./assets/img/xay-dung-be-boi.png" alt="">
+                                                <div class="news_other-thumb-cat">
+                                                    Kiến thức xây dựng bể bơi
+                                                </div>
+                                            </div>
+                                            <div class="news_other-title">Kích thước tiêu chuẩn của hồ bơi gia đình là bao nhiêu?</div>
+                                            <div class="news_other-date"> Ngày 22 Tháng 02 Năm 2022</div>
+                                            <div class="news_other-desc"> Hiện nay, tại rất nhiều vùng miền vẫn sử dụng nước giếng khoan. Chính vì vậy, câu hỏi “có nên sử dụng nước giếng khoan...</div>
+                                            <div class="news_other-readmore">Chi tiết</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="l-4 m-12 s-12">
+                                    <div class="news_other-item">
+                                        <a href="">
+                                            <div class="news_other-thumb">
+                                                <img src="./assets/img/xay-dung-be-boi.png" alt="">
+                                                <div class="news_other-thumb-cat">
+                                                    Kiến thức xây dựng bể bơi
+                                                </div>
+                                            </div>
+                                            <div class="news_other-title">Kích thước tiêu chuẩn của hồ bơi gia đình là bao nhiêu?</div>
+                                            <div class="news_other-date"> Ngày 22 Tháng 02 Năm 2022</div>
+                                            <div class="news_other-desc"> Hiện nay, tại rất nhiều vùng miền vẫn sử dụng nước giếng khoan. Chính vì vậy, câu hỏi “có nên sử dụng nước giếng khoan...</div>
+                                            <div class="news_other-readmore">Chi tiết</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="l-4 m-12 s-12">
+                                    <div class="news_other-item">
+                                        <a href="">
+                                            <div class="news_other-thumb">
+                                                <img src="./assets/img/xay-dung-be-boi.png" alt="">
+                                                <div class="news_other-thumb-cat">
+                                                    Kiến thức xây dựng bể bơi
+                                                </div>
+                                            </div>
+                                            <div class="news_other-title">Kích thước tiêu chuẩn của hồ bơi gia đình là bao nhiêu?</div>
+                                            <div class="news_other-date"> Ngày 22 Tháng 02 Năm 2022</div>
+                                            <div class="news_other-desc"> Hiện nay, tại rất nhiều vùng miền vẫn sử dụng nước giếng khoan. Chính vì vậy, câu hỏi “có nên sử dụng nước giếng khoan...</div>
+                                            <div class="news_other-readmore">Chi tiết</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="l-3 m-12 s-12">
